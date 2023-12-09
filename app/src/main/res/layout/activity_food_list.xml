@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="680dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/gao"
+    android:orientation="vertical"
+    tools:context=".FoodList">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="394dp"
+        android:layout_height="319dp"
+        android:layout_margin="10dp" />
+
+    <ImageButton
+        android:id="@+id/btn_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/analysis" />
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FoodCreate">
+
+  <ImageButton
+      android:id="@+id/imageButton"
+      android:layout_width="match_parent"
+      android:layout_height="95dp"
+      android:background="@android:color/transparent"
+      android:enabled="true"
+      app:srcCompat="@drawable/photo" />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="match_parent"
+      android:layout_height="148dp"
+      android:enabled="true"
+      tools:srcCompat="@tools:sample/avatars" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/foodNameEditText"
+        android:layout_width="198dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:enabled="true"
+        android:fontFamily="@font/ansong"
+        android:hint=" 음식 이름"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/foodCountEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="반찬 이름"
+        android:fontFamily="@font/ansong"
+        android:inputType="text"
+        android:enabled="true"/>
+
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <EditText
+
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:enabled="true"
+        android:fontFamily="@font/ansong"
+        android:hint="음료 이름"
+        android:inputType="text"></EditText>
+
+    <EditText
+
+        android:layout_width="130dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:enabled="true"
+        android:fontFamily="@font/ansong"
+        android:hint="음식비용"
+        android:inputType="number"></EditText>
+
+    <EditText
+
+        android:layout_width="128dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:enabled="true"
+        android:fontFamily="@font/ansong"
+        android:hint="음료비용"
+        android:inputType="number"></EditText>
+</LinearLayout>
+  <EditText
+      android:id="@+id/contentEditText"
+      android:layout_width="match_parent"
+      android:layout_height="99dp"
+      android:ems="10"
+      android:enabled="true"
+      android:fontFamily="@font/ansong"
+      android:gravity="top"
+      android:hint=" 소감"
+      android:inputType="textMultiLine"
+      android:lines="5"
+      android:maxLines="5" />
+  <EditText
+      android:id="@+id/timeText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:hint=" 시간"
+      android:fontFamily="@font/ansong"
+      android:inputType="textPersonName"
+      android:enabled="true"/>
+
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint=" 장소"
+      android:fontFamily="@font/ansong"
+      android:inputType="textPersonName"
+      android:enabled="false"/>
+
+  <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/radio_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="상록원 1층" />
+
+    <RadioButton
+        android:id="@+id/radio_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="상록원 2층" />
+
+    <RadioButton
+        android:id="@+id/radio_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="기숙사 식당" />
+
+  </RadioGroup>
+
+  <Button
+      android:id="@+id/placeButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#E2E2E2"
+      android:textSize="17dp"
+      android:textStyle="bold"
+      android:text="식사 장소 확인" />
+
+  <ImageButton
+      android:id="@+id/imageButton2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/transparent"
+      app:srcCompat="@drawable/foodsave" />
+
+</LinearLayout>
